@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+    <link rel="stylesheet" href="{% static "css/Login_Page.css" %}">
+</head>
+<body>
+
+<!--<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>-->
+<form class="modal-content" action="/action_page.php">
+    <div class="container">
+        <h1 style="color: firebrick">Login</h1>
+        <p style="color: firebrick">Please fill in this form to login.</p>
+        <hr>
+        <label for="username"><b>username</b></label>
+        <input type="text" placeholder="Enter username" name="username" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+
+        <!--<buttun type="submit" class="signupbtn">Login</buttun>-->
+
+        <!--<label for="psw-repeat"><b>Repeat Password</b></label>-->
+        <!--<input type="password" placeholder="Repeat Password" name="psw-repeat" required>-->
+
+        <label>
+            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+        </label>
+
+        <p>Don't have an account?? <a href="Sign_in_page.html" style="color:dodgerblue">Sign Up</a>.</p>
+
+        <div class="clearfix">
+            <!--<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>-->
+            <button type="submit" class="signupbtn">Login</button>
+        </div>
+    </div>
+</form>
+
+</body>
+</html>

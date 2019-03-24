@@ -1,0 +1,53 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign In Page</title>
+    <link rel="stylesheet" href="{% static "css/Sign_in.css" %}">
+</head>
+<body>
+
+<!--<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>-->
+<form class="modal-content" action="/action_page.php">
+    <div class="container">
+        <h1>Sign Up</h1>
+        <p>Please fill in this form to create an account.</p>
+        <hr>
+        <label for="firstname"><b>first name</b></label>
+        <input type="text" placeholder="Enter First name" name="firstname" required>
+
+        <label for="lastname"><b>las name</b></label>
+        <input type="text" placeholder="Enter Last Name" name="last name" required>
+
+        <label for="email"><b>email</b></label>
+        <input type="text" placeholder="Enter Email" name="Email" required>
+
+        <label for="username"><b>username</b></label>
+        <input type="text" placeholder="Enter username" name="username" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+
+        <label for="phone">phone number</label>
+        <input type="text" placeholder="Enter Phone Number" name="phone number">
+
+        <!--<buttun type="submit" class="signupbtn">Login</buttun>-->
+
+        <!--<label for="psw-repeat"><b>Repeat Password</b></label>-->
+        <!--<input type="password" placeholder="Repeat Password" name="psw-repeat" required>-->
+
+        <label>
+            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+        </label>
+
+        <!--<p>Don't have an account?? <a href="#" style="color:dodgerblue">Sign Up</a>.</p>-->
+
+        <div class="clearfix">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+            <button type="submit" class="signupbtn">Sign up</button>
+        </div>
+    </div>
+</form>
+
+</body>
+</html>
